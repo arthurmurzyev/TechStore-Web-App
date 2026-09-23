@@ -2,7 +2,7 @@
 
 Полнофункциональная платформа интернет-магазина электроники с Backend на .NET 8 Web API и Frontend на React.
 
-## 🎯 Обзор проекта
+##  Обзор проекта
 
 TechStore - это современное E-commerce решение для продажи электроники, включающее:
 
@@ -10,7 +10,7 @@ TechStore - это современное E-commerce решение для пр�
 - **Frontend Client** (React 18 + Vite + Tailwind CSS)
 - **Docker Compose** для легкого развертывания
 
-## 📁 Структура проекта
+##  Структура проекта
 
 ```
 Project_1/
@@ -34,7 +34,7 @@ Project_1/
 └── README.md               # Этот файл
 ```
 
-## 🚀 Быстрый старт
+##  Быстрый старт
 
 ### Вариант 1: Docker Compose (Рекомендуется)
 
@@ -49,10 +49,10 @@ docker-compose up --build
 ```
 
 После запуска будут доступны:
-- 🌐 **Frontend**: http://localhost:3000
-- 🔧 **Backend API**: http://localhost:5000
-- 📊 **Swagger UI**: http://localhost:5000/swagger
-- 🗄️ **MySQL**: localhost:3306
+-  **Frontend**: http://localhost:3000
+-  **Backend API**: http://localhost:5000
+-  **Swagger UI**: http://localhost:5000/swagger
+-  **MySQL**: localhost:3306
 
 ### Вариант 2: Локальный запуск
 
@@ -94,7 +94,7 @@ npm run dev
 
 Frontend будет доступен на http://localhost:5173
 
-## 🎨 Функциональность
+##  Функциональность
 
 ### Backend API
 
@@ -148,10 +148,10 @@ Frontend будет доступен на http://localhost:5173
 ### Frontend Client
 
 #### Страницы:
-- 🏠 **Главная (Каталог)** - Сетка товаров с фильтрами и поиском
-- 🛒 **Корзина** - Управление товарами в корзине
-- 📦 **Заказы** - История заказов и оплата
-- 🔐 **Авторизация** - Вход и регистрация
+-  **Главная (Каталог)** - Сетка товаров с фильтрами и поиском
+-  **Корзина** - Управление товарами в корзине
+-  **Заказы** - История заказов и оплата
+-  **Авторизация** - Вход и регистрация
 
 #### Возможности:
 - Адаптивный дизайн (mobile-first)
@@ -170,28 +170,6 @@ Frontend будет доступен на http://localhost:5173
 - Tailwind CSS
 - Axios
 - Lucide Icons
-
-## 🧪 Тестовые данные
-
-### Пользователи
-
-```
-Администратор:
-Email: admin@techstore.com
-Пароль: Admin123!
-
-Покупатель:
-Email: user@techstore.com
-Пароль: User123!
-```
-
-### Начальные данные
-
-База данных автоматически заполняется тестовыми данными:
-
-- **4 категории**: Смартфоны, Ноутбуки, Комплектующие, Аксессуары
-- **12 товаров** электроники с характеристиками и изображениями (iPhone 15 Pro, Samsung Galaxy S24 Ultra, MacBook Pro 16", ASUS ROG Strix G16, RTX 4080, AMD Ryzen 9 7950X, AirPods Pro 2 и др.)
-- **2 пользователя** (admin и user)
 
 ## 🗄️ База данных
 
@@ -305,7 +283,7 @@ npm run build
 # Настройте переменную окружения VITE_API_URL
 ```
 
-## 📦 NuGet пакеты (Backend)
+## NuGet пакеты (Backend)
 
 ```xml
 <PackageReference Include="Microsoft.EntityFrameworkCore" Version="8.0.0" />
@@ -316,7 +294,7 @@ npm run build
 <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="7.0.0" />
 ```
 
-## 🛠 Разработка
+## Разработка
 
 ### Добавление миграции
 
@@ -339,7 +317,7 @@ cd TechStore.Client
 npm run lint
 ```
 
-## 🐛 Troubleshooting
+## Troubleshooting
 
 ### Backend не запускается
 - Проверьте, что MySQL запущен и доступен
@@ -364,21 +342,9 @@ builder.Services.AddCors(options => {
 });
 ```
 
-## 📚 Дополнительная документация
+## Дополнительная документация
 
 - [Backend README](TechStore.API/README.md) - Подробная документация API
 - [Frontend README](TechStore.Client/README.md) - Документация клиента
 
-## 📄 Лицензия
 
-MIT License
-
-## 🤝 Вклад
-
-Pull requests приветствуются! Для крупных изменений сначала откройте issue.
-
----
-
-**Автор**: TechStore Team  
-**Версия**: 1.0.0  
-**Дата**: 2026
