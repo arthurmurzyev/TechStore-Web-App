@@ -171,7 +171,7 @@ Frontend будет доступен на http://localhost:5173
 - Axios
 - Lucide Icons
 
-## 🗄️ База данных
+## База данных
 
 ### Схема
 
@@ -227,7 +227,7 @@ OrderItems (Товары в заказе)
 └── PriceAtOrder (decimal)
 ```
 
-## 🔧 Конфигурация
+## Конфигурация
 
 ### Backend (appsettings.json)
 
