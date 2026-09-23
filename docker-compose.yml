@@ -1,0 +1,68 @@
+version: "3.8"
+
+services:
+  mysql:
+    image: mysql:8.0
+    command: --character-set-server=utf8mb4 --collation-server=utf8mb4_unicode_ci
+    container_name: techstore_mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: rootpassword
+      MYSQL_DATABASE: techstore
+    ports:
+      - "3306:3306"
+    volumes:
+      - mysql_data:/var/lib/mysql
+    networks:
+      - techstore_network
+    healthcheck:
+      test:
+        [
+          "CMD",
+          "mysqladmin",
+          "ping",
+          "-h",
+          "localhost",
+          "-u",
+          "root",
+          "-prootpassword",
+        ]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  api:
+    build:
+      context: .
+      dockerfile: TechStore.API/Dockerfile
+    container_name: techstore_api
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+      - ConnectionStrings__DefaultConnection=Server=mysql;Port=3306;Database=techstore;User=root;Password=rootpassword;CharSet=utf8mb4;
+    ports:
+      - "5000:8080"
+    depends_on:
+      mysql:
+        condition: service_healthy
+    networks:
+      - techstore_network
+
+  client:
+    build:
+      context: ./TechStore.Client
+      dockerfile: Dockerfile
+    container_name: techstore_client
+    ports:
+      - "3000:3000"
+    depends_on:
+      - api
+    networks:
+      - techstore_network
+    stdin_open: true
+    tty: true
+
+volumes:
+  mysql_data:
+
+networks:
+  techstore_network:
+    driver: bridge
