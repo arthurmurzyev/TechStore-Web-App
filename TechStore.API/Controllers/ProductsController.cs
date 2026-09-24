@@ -18,6 +18,7 @@ public class ProductsController : ControllerBase
     }
 
     [HttpGet]
+    [HttpHead]
     public async Task<IActionResult> GetProducts(
         [FromQuery] int page = 1,
         [FromQuery] int pageSize = 10,
@@ -83,7 +84,7 @@ public class ProductsController : ControllerBase
         try
         {
             var product = await _productService.UpdateProductAsync(id, dto);
-            
+
             if (product == null)
                 return NotFound(new { message = "Product not found" });
 
@@ -100,7 +101,7 @@ public class ProductsController : ControllerBase
     public async Task<IActionResult> DeleteProduct(int id)
     {
         var result = await _productService.DeleteProductAsync(id);
-        
+
         if (!result)
             return NotFound(new { message = "Product not found" });
 
