@@ -1,6 +1,5 @@
 # TechStore — Web Application
 
-Современное веб-приложение интернет-магазина электроники с полноценной REST API архитектурой, ролевой моделью авторизации и развертыванием в облачной инфраструктуре.
 
 **Live Demo:** [https://techstore-client](https://techstore-client-en2y.onrender.com)  
 
