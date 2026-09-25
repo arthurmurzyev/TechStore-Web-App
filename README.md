@@ -3,7 +3,6 @@
 
 **Live Demo:** [https://techstore-client](https://techstore-client-en2y.onrender.com)  
 
----
 
 ## Интерфейс приложения
 
