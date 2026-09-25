@@ -8,7 +8,7 @@
 
 | Главный каталог товаров | Форма авторизации |
 | :---: | :---: |
-| ![Каталог](./Screenshots/catalog.png) | ![Авторизация](./Screenshots/login.png) |
+| ![Авторизация](./Screenshots/login.png) | ![Каталог](./Screenshots/catalog.png) |
 
 ---
 
@@ -23,7 +23,4 @@
 
 ## Локальный запуск
 
-### 1. Клонирование репозитория
-```bash
-git clone [https://github.com/arthurmurzyev/TechStore-Web-App.git](https://github.com/arthurmurzyev/TechStore-Web-App.git)
-cd TechStore-Web-App
+
