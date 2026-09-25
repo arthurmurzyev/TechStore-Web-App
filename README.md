@@ -3,7 +3,6 @@
 Современное веб-приложение интернет-магазина электроники с полноценной REST API архитектурой, ролевой моделью авторизации и развертыванием в облачной инфраструктуре.
 
 **Live Demo:** [https://techstore-client-en2y.onrender.com](https://techstore-client-en2y.onrender.com)  
-**API Endpoint:** [https://techstore-api-mp5z.onrender.com/api/products](https://techstore-api-mp5z.onrender.com/api/products)
 
 ---
 
