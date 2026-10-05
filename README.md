@@ -1,17 +1,18 @@
 # TechStore — Web Application
 
 
-**Live Demo:** [https://techstore-client](https://techstore-client-en2y.onrender.com)  
+**Live Demo:** [https://techstore-client-en2y.onrender.com](https://techstore-client-en2y.onrender.com)  
 
 
 ## Интерфейс приложения
 
-| Форма авторизации | Главный каталог товаров |
-| :---: | :---: |
-| ![Авторизация](./Screenshots/login.png) | ![Каталог](./Screenshots/catalog.png) |
+### Форма авторизации
+![Авторизация](./Screenshots/login.png) 
+
+### Главный каталог товаров
+![Каталог](./Screenshots/catalog.png) 
 
 ---
-
 
 ### Backend
 * **Платформа:** .NET 8 Web API
@@ -21,7 +22,7 @@
 * **Документация API:** Swagger / OpenAPI
 
 
-## Локальный запуск
+## Локальный запуск (требуется Docker)
 
 ```bash
 docker-compose up --build -d
